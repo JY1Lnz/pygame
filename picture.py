@@ -21,12 +21,12 @@ while True:
         if event.type == QUIT:
             exit()
 
-    screen.set_clip(clip_rect)
+    screen.set_clip(clip_rect)  # 接受一个矩阵参数,只更新矩阵内部
     rand_cool = (randint(0, 255), randint(0, 255), randint(0, 255))
     screen.lock()
     for _ in range(100):
         rand_pos = (randint(0, 639), randint(0, 479))
         screen.set_at(rand_pos, rand_cool)
     screen.unlock()
-
+    screen.fill((0, 0, 0))
     pygame.display.update()
