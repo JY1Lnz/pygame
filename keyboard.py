@@ -2,7 +2,7 @@ import pygame
 from pygame.locals import *
 from sys import exit
 from vector_2d import vector
-from math import *
+from math kimport *
 
 pygame.init()
 

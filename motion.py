@@ -3,12 +3,13 @@ from pygame.locals import *
 from sys import exit
 
 background_image_filenmae = 'sushiplate.jpg'
-sprite_image_filename = 'fugu.png'
+sprite_image_filename = 'modian.jpg'
 
 pygame.init()
 screen = pygame.display.set_mode((640, 480), 0, 32)
 background = pygame.image.load(background_image_filenmae).convert()
 sprite = pygame.image.load(sprite_image_filename)
+sprite = pygame.transform.scale(sprite, (int(sprite.get_width() / 2), int(sprite.get_height() / 2)))
 
 clock = pygame.time.Clock()  # Clock对象
 x, y = 100., 100.
