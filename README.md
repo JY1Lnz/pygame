@@ -1,2 +1,2 @@
-#pygame学习
+# pygame学习
 github链接测试
